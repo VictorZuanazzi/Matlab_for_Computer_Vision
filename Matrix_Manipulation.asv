@@ -1,8 +1,5 @@
 % (Section 1.6) 
 % Exercises on Matrix Manipulation
-
-% Note: delete the ; in the end of the line to print the result.
-
 % 1.Create a vector of the even whole numbers between 10 and 49
 V = 10:2:49;
 
@@ -33,7 +30,7 @@ t = 1:0.1:2.0;
 % 4.a ln(2 + t + t^2)
 a4 = log(2 + t + t.^2);
 % 4.b exp(1+cos(3t))
-b4 = exp(1+cos(3*t));
+b4 = exp(1+cos(3*t))
 % 4.c cos^2(t) + sin^2(t) = 1.0
 c4 = cos(t).^2 + sin(t).^2;
 % 4.d tan^-1(t)
@@ -99,7 +96,7 @@ y = [5 2 2 6 0 0 2];
 % 8.a x<y
 a8= x<y;
 % 8.b y<=x
-b8 = y <=x;
+b8 = y <=x
 % 8.c y~=x, not equal
 c8 = y~=x;
 % 8.d x == y
@@ -118,15 +115,6 @@ a9 = A(:,[1 4]);
 b9 = A([2 3], [3 1]);
 % 9.c reshape A into a column vector
 c9 = A(:);
-% 9.i reshape A into a matrix of 2 rows and 6 columns
-i9 = reshape(A, 2, 6);
-% 9.ii flip matrix upside down
-ii9 = flipud(A);
-% 9.iii flip matrix left-righ
-iii9 = fliplr(A);
-%  9.iv return size of the matrix
-iv9 = size(A);
-% 9.v max value of A
-v9 = max(max(A));
-v9 = max(A, [], 'all');
+
+
 
